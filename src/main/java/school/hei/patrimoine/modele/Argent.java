@@ -82,4 +82,9 @@ public class Argent implements Serializable {
   public boolean hasSameValeurComptable(Argent that, LocalDate t) {
     return that.convertir(devise, t).equals(this);
   }
+
+  public double getMontant() {
+    return montant;
+  }
+
 }
